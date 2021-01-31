@@ -4,8 +4,6 @@ class About extends BaseController
 {
 	public function index()
 	{
-		$data['content'] = view('pages/about');
-
-		return view('layout', $data);
+		return view('pages/about');
 	}
 }

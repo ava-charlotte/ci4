@@ -7,6 +7,6 @@
   <title>ci4</title>
 </head>
 <body>
-  <?php echo $content ?>
+  <?= $this->renderSection('content') ?>
 </body>
 </html>
