@@ -4,10 +4,8 @@ class Home extends BaseController
 {
 	public function index()
 	{
-		$data['title'] = 'Home - ci4';
+		$data['content'] = view('pages/home');
 
-		echo view('templates/header', $data);
-		echo view('home');
-		echo view('templates/footer');
+		return view('layout', $data);
 	}
 }

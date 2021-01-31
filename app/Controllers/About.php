@@ -4,10 +4,8 @@ class About extends BaseController
 {
 	public function index()
 	{
-		$data['title'] = 'About - ci4';
+		$data['content'] = view('pages/about');
 
-		echo view('templates/header', $data);
-		echo view('about');
-		echo view('templates/footer');
+		return view('layout', $data);
 	}
 }
