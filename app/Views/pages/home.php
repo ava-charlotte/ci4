@@ -2,6 +2,13 @@
 
 <?= $this->section('content') ?>
   <div>
-    <h3>Home Section</h3>
+    <ul>
+      <?php foreach($persons as $key => $value): ?>
+        <li>
+          <p>Name: <?= $value->name ?></p> 
+          <p>Description: <?= $value->description ?></p>
+        </li>
+      <?php endforeach ?>
+    </ul>
   </div>
 <?= $this->endSection() ?>
